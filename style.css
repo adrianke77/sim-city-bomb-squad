@@ -1,0 +1,88 @@
+
+* {
+  box-sizing : border-box;
+}
+html,body {
+  display         : flex;
+  height          : 100%;
+  width           : 100%;
+  margin          : 0;
+  padding         : 0;
+  justify-content : center;
+}
+.bgImgCont {
+  display         : flex;
+  overflow        : hidden;
+  height          : 100%;
+  width           : 100%;
+  flex-direction  : row;
+  justify-content : center;
+}
+.bgImgCont img {
+  z-index : -1;
+  height  : auto;
+  width   : 100%;
+}
+.bombTimer{
+  position   : absolute;
+  top        : 120px;
+  left       : calc(50%-70px);
+  z-index    : 2;
+  height     : 30px;
+  width      : 140px;
+  font-size  : 1.4em;
+  text-align : center;
+}
+.resetButton{
+  position         : absolute;
+  top              : 360px;
+  left             : calc(50%-60px);
+  z-index          : 2;
+  height           : 10px;
+  width            : 120px;
+  background-color : grey;
+  font-size        : 0.5em;
+  text-align       : center;
+  border-radius    : 2px;
+}
+.bomb {
+  position         : absolute;
+  display          : flex;
+  top              : 100px;
+  left             : calc(50%-100px);
+  z-index          : 1;
+  height           : 280px;
+  width            : 160px;
+  background-color : black;
+  flex-direction   : row;
+  justify-content  : center;
+}
+.wirebox {
+  display         : flex;
+  height          : 200px;
+  width           : 20px;
+  margin-top      : 50px;
+  margin-right    : 2px;
+  margin-left     : 2px;
+  flex-direction  : row;
+  justify-content : center;
+}
+.wirebox img {
+  max-height : auto;
+  width      : 20px;
+}
+.redtext {
+  color : red;
+}
+.greentext {
+  color : green;
+}
+.white {
+  background-color : white;
+}
+.grey {
+  background-color : grey;
+}
+.hidden {
+  display : none;
+}
